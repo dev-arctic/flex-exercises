@@ -1,0 +1,119 @@
+/* 
+heading -> font-family: 'Sevillana', cursive;
+p -> font-family: 'Prosto One', cursive;
+foot -> font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prosto+One&family=Sevillana&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-container {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+#main-container > h1 {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Sevillana', cursive;
+    letter-spacing: 10px;
+}
+#main-container > p {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+img {
+    display: inline-block;
+    width: 350px;
+    border-radius: 20px;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+#login-main-box {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+#login-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 300px;
+    justify-content: center;
+    width: 50%;
+}
+#login-box * {
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input{
+    display: inline-block;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+#sub-p{
+    margin-top: 30px;
+    margin: auto;
+    font-size: 20px;
+    padding: 30px;
+    font-family: 'Prosto One', cursive;
+}
+.p {
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: 'Prosto One', cursive;
+    padding: 10px;
+}
+label,h1 {
+    color: whitesmoke;
+}
+@media only screen and (max-width: 900px) {
+    * {
+        transition: 600ms all;
+    }
+    #login-main-box {
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    img {
+        width: 150px;
+    }
+    label,h1,.p,#sub-p {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    * {
+        transition: 600ms all;
+    }
+    #login-main-box {
+        margin-top: 0;
+        flex-wrap: wrap;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+    #login-box {
+    }
+    img {
+        width: 150px;
+    }
+    label,h1,.p,#sub-p {
+        font-size: 10px;
+    }
+    .p,img {
+        margin: 0;
+        padding: 0;
+    }
+}
